@@ -4,26 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentos</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <title>Cris2</title>
+
+    <link rel="stylesheet" href="./src/css/estilo.css">
 </head>
 
 <body>
 
-    <main>
-        <form action="">
-            nome
-            <input type="text" name="" id="">
-            elemento
-            <input type="text" name="" id="">
-            circulo
-            <input type="number" name="" id="">
-            execução
-            <input type="text" name="" id="">
-        </form>
-    </main>
+    <form action="">
+        <label for="Nome">Nome:</label>
+        <input type="text" name="Nome" id="Nome"><br>
+        <br>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <label for="upload">Imagem:</label>
+        <input class="upload" type="file" id="upload" accept="image/*">
+        <div class="preview">
+            <img class="preview_img" src="">
+        </div>
+        <br>
+
+        <label for="Elemento">Elemento:</label>
+        <button id="Elemento" class="botao_lista_elemento" type="button">Elemento</button><br>
+        <div class="lista_elemento">
+            <button type="button">Sangue</button>
+            <button type="button">Morte</button>
+            <button type="button">Conhecimento</button>
+            <button type="button">Energia</button>
+            <button type="button">Medo</button>
+            <button type="button">Varia</button>
+        </div>
+        <br>
+
+        <label for="Circulo">Circulo:</label>
+        <button id="Circulo" class="botao_lista_circulo">Circulo</button><br>
+        <div class="lista_circulo">
+            <button>1° Circulo (1 PE)</button>
+            <button>2° Circulo (3 PE)</button>
+            <button>3° Circulo (6 PE)</button>
+            <button>4° Circulo (10 PE)</button>
+        </div>
+        <br>
+
+        <label for="Execucao">Execução:</label>
+        <button id="Execucao" class="botao_lista_execucao">Execução</button><br>
+        <div class="lista_execucao">
+            <button>Padrão</button>
+            <button>Movimento</button>
+            <button>Completa</button>
+            <button>Reação</button>
+            <button>Livre</button>
+        </div>
+        <br>
+
+        <label for="Alcance">Alcance:</label>
+        <button id="Alcance" class="botao_lista_alcance">Alcance</button><br>
+        <div class="lista_alcance">
+            <button>Pessoal</button>
+            <button>Toque</button>
+            <button>Curto (9m)</button>
+            <button>Médio (18m)</button>
+            <button>Longo (36m)</button>
+            <button>Extremo (90m)</button>
+            <button>Ilimitado</button>
+        </div>
+        <br>
+
+        <label for="Area">Área:</label>
+        <input type="text" name="Área" id="Area"><br>
+        <br>
+
+        <label for="Alvo">Alvo:</label>
+        <input type="text" name="Alvo" id="Alvo"><br>
+        <br>
+
+        <label for="Duracao">Duração:</label>
+        <input type="text" name="Duração" id="Duracao"><br>
+        <br>
+
+        <label for="Efeito">Efeito:</label>
+        <input type="text" name="Efeito" id="Efeito"><br>
+        <br>
+
+        <label for="Resistencia">Resistência:</label>
+        <input type="text" name="Resistência" id="Resistencia"><br>
+        <br>
+
+        <label for="Dados">Dados:</label>
+        <input type="text" name="Dados" id="Dados"><br>
+        <br>
+
+        <label for="Descricao">Descrição:</label><br>
+        <textarea name="Descrição" id="Descricao" rows="4" cols="50"></textarea><br>
+        <br>
+
+        <label for="Dados Discente">Dados Discente:</label>
+        <input type="text" name="Dados Discente" id="Dados Discente"><br>
+        <br>
+
+        <label for="Descricao Discente">Descrição Discente:</label><br>
+        <textarea name="Descrição Discente" id="Descricao Discente" rows="4" cols="50"></textarea><br>
+        <br>
+
+        <label for="Dados Verdadeiro">Dados Verdadeiro:</label>
+        <input type="text" name="Dados Verdadeiro" id="Dados Verdadeiro"><br>
+        <br>
+
+        <label for="Descricao Verdadeiro">Descrição Verdadeiro:</label><br>
+        <textarea name="Descrição Verdadeiro" id="Descricao Verdadeiro" rows="4" cols="50"></textarea>
+    </form>
+
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
